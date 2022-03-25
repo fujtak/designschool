@@ -1,0 +1,210 @@
+/* common */
+
+body{
+    margin: 0;
+}
+
+h1,h2{
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+}
+
+a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 16px;
+}
+
+/* header */
+
+header{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-name{
+    padding: 8px;
+    border: 1px solid #ffffff;
+}
+
+header .header-name h1{
+    font-size: 12px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-li-1{
+    border-left: 1px solid #ffffff;
+}
+
+header li{
+    padding: 0 8px;
+    border-right: 1px solid #ffffff;
+}
+
+header li a{
+    font-size: 12px;
+}
+
+/* main */
+
+.wrappper{
+    display: flex;
+    flex-direction: column;
+}
+
+main .hero1 img{
+    width: 100%;
+    height: auto;
+}
+
+main .hero2{
+    display: none;
+}
+
+main .hero2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* pic */
+
+.pic img{
+    width: 100%;
+}
+
+/* info */
+
+.info{
+    margin-bottom: 32px;
+}
+
+.info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info li{
+    width: 70%;
+    background: #fffaf4;
+    border-bottom: solid 1px rgb(255, 147, 30);
+    margin-bottom: 16px;
+}
+
+.info h2{
+    font-size: 24px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+/* access */
+
+.access .container{
+    display: flex;
+    justify-content: center;
+}
+
+.access a{
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 1px solid black;
+    margin-bottom: 16px;
+    width: 40%;
+}
+
+/* sns */
+
+.sns .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.sns ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.sns li{
+    margin-right: 16px;
+}
+
+.sns i{
+    font-size: 24px;
+}
+
+/* footer */
+
+footer .container{
+    display: flex;justify-content: center;
+    padding: 8px 0;
+}
+
+footer small{
+    font-size: 16px;
+}
+
+
+
+@media(min-width:584px){
+
+main .hero1{
+    display: none;
+}
+
+main .hero2{
+    display: block;
+}
+
+main .hero2 img{
+    height: 65vh;
+}
+
+.container{
+    width: 552px;
+    margin: 0 auto;
+}
+
+}
+
+@media (min-width:1100px){
+
+main .hero2 img{
+    height: 90vh;
+}
+
+}
