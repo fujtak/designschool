@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    font-family: "Osaka",serif;
 }
 
 h1,h2{
@@ -75,23 +76,20 @@ header li a{
     font-size: 12px;
 }
 
-/* main */
+/* hero */
 
-.wrappper{
-    display: flex;
-    flex-direction: column;
+.hero .hero1 img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-main .hero1 img{
-    width: 100%;
-    height: auto;
-}
-
-main .hero2{
+.hero .hero2{
     display: none;
+    height: 480px;
 }
 
-main .hero2 img{
+.hero .hero2 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -99,8 +97,14 @@ main .hero2 img{
 
 /* pic */
 
+.pic .container{
+    display: flex;
+    justify-content: center;
+}
+
 .pic img{
     width: 100%;
+    max-width: 560px;
 }
 
 /* info */
@@ -116,7 +120,8 @@ main .hero2 img{
 }
 
 .info li{
-    width: 70%;
+    width: 50%;
+    max-width: 540px;
     background: #fffaf4;
     border-bottom: solid 1px rgb(255, 147, 30);
     margin-bottom: 16px;
@@ -142,6 +147,7 @@ main .hero2 img{
     border: 1px solid black;
     margin-bottom: 16px;
     width: 40%;
+    max-width: 360px;
 }
 
 /* sns */
@@ -156,6 +162,7 @@ main .hero2 img{
 .sns ul{
     display: flex;
     width: 40%;
+    max-width: 360px;
     justify-content: space-between;
 }
 
@@ -180,31 +187,14 @@ footer small{
 
 
 
-@media(min-width:584px){
+@media(min-width:480px){
 
-main .hero1{
-    display: none;
-}
+    .hero .hero1{
+        display: none;
+    }
 
-main .hero2{
-    display: block;
-}
-
-main .hero2 img{
-    height: 65vh;
-}
-
-.container{
-    width: 552px;
-    margin: 0 auto;
-}
-
-}
-
-@media (min-width:1100px){
-
-main .hero2 img{
-    height: 90vh;
-}
+    .hero .hero2{
+        display: block;
+    }
 
 }
